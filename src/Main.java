@@ -25,6 +25,12 @@ public class Main {
 
         checkSwitch();
 
+        Circle c6 = new Circle("C6", 2, new AsciiRenderer());
+        check("T6", "Circle + AsciiRenderer", c6.execute(), "ASCII art of circle radius=2");
+
+        Square s7 = new Square("S7", 3, new AsciiRenderer());
+        check("T7", "Square + AsciiRenderer", s7.execute(), "ASCII art of square side=3");
+
         System.out.println("SUMMARY: " + passed + "/" + total + " PASS");
     }
 
